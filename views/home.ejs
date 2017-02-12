@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html lang="en">
+
+<!-- ---------------------------------------------------------------------- -->
+
+	<head>
+		
+		<% include partials/head.ejs %>
+
+	</head>
+
+<!-- ---------------------------------------------------------------------- -->
+	
+	<body>
+
+		<% include partials/header.ejs %>
+
+		<div id="hero-image">
+
+			<h1 id="hero-title"><span class="center"><%=title%></span></h1>
+
+		</div>
+
+		<div id="posters-wrapper" class="content-padding clearfix">
+
+			<% for (var i = 0; i < movies.length; i++) { %>
+
+				<div class="poster">
+
+					<img src="/img/<%=movies[i].poster%>" alt="poster image" class="img-responsive">
+
+					<div class="poster-info-overlay">
+
+						<h3><%=movies[i].title%></h3>
+
+						<a href="/star_wars_episode/<%=movies[i].episode_number%>" ><h4>View More <i class="fa fa-arrow-righ"></i></h4></a>
+						
+					</div>
+					
+				</div>
+
+			<% }; %>
+
+			
+		</div>
+
+		
+		<% include partials/footer.ejs %>
+
+
+
+
+<%console.log("May The Force Be With You, Dude")%>
+
+
+
+
+
+
+
+		<% include partials/scripts.ejs %>
+
+	</body>
+
+<!-- ---------------------------------------------------------------------- -->
+
+</html>

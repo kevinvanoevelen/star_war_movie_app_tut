@@ -1,0 +1,12 @@
+{
+  "name": "proj_1",
+  "version": "1.0.0",
+  "description": "Your new folder by the name of  ---  proj_1/  ---  has been created",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "app.js"
+  },
+  "author": "kevin",
+  "license": "ISC"
+}
